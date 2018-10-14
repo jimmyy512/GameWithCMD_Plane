@@ -5,9 +5,9 @@ void print_range()
 	{
 		for (j = 1; j <= 59; j++)
 		{
-			if (i == 1 || i ==50)
+			if (i == 1 || i == 50)
 			{
-				if (j!=1)
+				if (j != 1)
 					printf("-");
 				else
 					printf("  ");
@@ -33,7 +33,7 @@ void weapon1(int i)
 	else if (i == 2)
 		printf("  ||||");
 	else if (i == 3)
-		printf(" |┌┐|");
+		printf("  ●●");
 	else if (i == 4)
 		printf("|||●|||");
 	else
@@ -43,7 +43,7 @@ void weapon2(int i)
 {
 	if (i == 0)
 		printf("   ↑");
-	else if (i== 1)
+	else if (i == 1)
 		printf("   ||");
 	else if (i == 2)
 		printf("。|｜|。");
@@ -69,9 +69,9 @@ void weapon3(int i)
 	else
 		printf(" ︻┴︻");
 }
-int PRINT_explosion(struct explosion* first_animation, int line_status,int status)
+int PRINT_explosion(struct explosion* first_animation, int line_status, int status)
 {
-	COORD xy=first_animation->pos;
+	COORD xy = first_animation->pos;
 	if (line_status == 3)
 	{
 		if (status == 2)
@@ -141,5 +141,5 @@ int PRINT_explosion(struct explosion* first_animation, int line_status,int statu
 	}
 	else
 		return 0;
-		
+
 }
