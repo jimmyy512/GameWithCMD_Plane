@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
 #include <mmsystem.h>
@@ -1084,7 +1084,7 @@ void printf_all_enemy()
 						}
 						if (i == 1)
 						{
-							printf("├█┤");
+							printf(" -█-");
 						}
 						if (i == 2)
 						{
@@ -1113,7 +1113,7 @@ void printf_all_enemy()
 						printf("       ");
 						xy.Y += 2;
 						SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-						printf("├█┤ ");
+						printf(" -█-");
 						xy.Y -= 1;
 						SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
 						printf("  ┬  ");
