@@ -16,7 +16,7 @@ void print_range()
 			else
 			{
 				if (j == 1 || j == 59)
-					printf("¡ü");
+					printf("âˆ¥");
 				else
 					printf(" ");
 			}
@@ -27,47 +27,47 @@ void print_range()
 void weapon1(int i)
 {
 	if (i == 0)
-		printf("   ¡C");
+		printf("   ã€‚");
 	else if (i == 1)
 		printf("   ||");
 	else if (i == 2)
 		printf("  ||||");
 	else if (i == 3)
-		printf(" |¢z¢{|");
+		printf(" |â”Œâ”|");
 	else if (i == 4)
-		printf("|||¡´|||");
+		printf("|||â—|||");
 	else
-		printf("  *¡·*");
+		printf("  *â—Ž*");
 }
 void weapon2(int i)
 {
 	if (i == 0)
-		printf("   ¡ô");
+		printf("   â†‘");
 	else if (i== 1)
 		printf("   ||");
 	else if (i == 2)
-		printf("¡C|¡U|¡C");
+		printf("ã€‚|ï½œ|ã€‚");
 	else if (i == 3)
-		printf("¡ô|¢i|¡ô");
+		printf("â†‘|â–ˆ|â†‘");
 	else if (i == 4)
-		printf("|¢f¡´¢f|");
+		printf("|â–…â—â–…|");
 	else
-		printf(" ¡k¢r¡k");
+		printf(" ï¸»â”´ï¸»");
 }
 void weapon3(int i)
 {
 	if (i == 0)
-		printf(" ¡C¡C¡C");
+		printf(" ã€‚ã€‚ã€‚");
 	else if (i == 1)
-		printf(" ¢p¢p¢p");
+		printf(" â–‰â–‰â–‰");
 	else if (i == 2)
-		printf(" ¢p¢p¢p");
+		printf(" â–‰â–‰â–‰");
 	else if (i == 3)
-		printf("|¢f¡´¢f|");
+		printf("|â–…â—â–…|");
 	else if (i == 4)
-		printf(" ¢|¢h¢}");
+		printf(" â””â–‡â”˜");
 	else
-		printf(" ¡k¢r¡k");
+		printf(" ï¸»â”´ï¸»");
 }
 int PRINT_explosion(struct explosion* first_animation, int line_status,int status)
 {
@@ -77,13 +77,13 @@ int PRINT_explosion(struct explosion* first_animation, int line_status,int statu
 		if (status == 2)
 		{
 			SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-			printf("  ¡°  ");
+			printf("  â€»  ");
 			xy.Y -= 1;
 			SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-			printf("¡°¡°¡°");
+			printf("â€»â€»â€»");
 			xy.Y -= 1;
 			SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-			printf("  ¡°  ");
+			printf("  â€»  ");
 			return 1;
 		}
 		if (status == 1)
@@ -92,7 +92,7 @@ int PRINT_explosion(struct explosion* first_animation, int line_status,int statu
 			printf("      ");
 			xy.Y -= 1;
 			SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-			printf("  ¡°  ");
+			printf("  â€»  ");
 			xy.Y -= 1;
 			SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
 			printf("      ");
@@ -104,13 +104,13 @@ int PRINT_explosion(struct explosion* first_animation, int line_status,int statu
 		}
 		xy = first_animation->pos;
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-		printf("¢¢¡°¢£");
+		printf("â•°â€»â•¯");
 		xy.Y -= 1;
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-		printf("¡°¡°¡°");
+		printf("â€»â€»â€»");
 		xy.Y -= 1;
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-		printf("¢~¡°¢¡");
+		printf("â•­â€»â•®");
 		xy.Y -= 1;
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
 		printf("      ");
@@ -122,12 +122,12 @@ int PRINT_explosion(struct explosion* first_animation, int line_status,int statu
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
 		printf("      ");
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-		printf("  ¡°  ");
+		printf("  â€»  ");
 		xy.Y -= 1;
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
 		printf("      ");
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-		printf("¡°¡°¡°");
+		printf("â€»â€»â€»");
 		return 1;
 	}
 	else if (line_status == 1)
@@ -136,7 +136,7 @@ int PRINT_explosion(struct explosion* first_animation, int line_status,int statu
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
 		printf("      ");
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
-		printf("  ¡°  ");
+		printf("  â€»  ");
 		return 1;
 	}
 	else
